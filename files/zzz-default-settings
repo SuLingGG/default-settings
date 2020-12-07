@@ -10,6 +10,9 @@ uci commit system
 uci set fstab.@global[0].anon_mount=1
 uci commit fstab
 
+uci set uhttpd.main.redirect_https=1
+uci commit uhttpd
+
 rm -f /usr/lib/lua/luci/view/admin_status/index/mwan.htm
 rm -f /usr/lib/lua/luci/view/admin_status/index/upnp.htm
 rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
